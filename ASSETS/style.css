@@ -1,0 +1,36 @@
+body{
+    margin : 30px 200px;
+    background-color: #141C21;
+    color: white;
+    text-align: center;
+}
+
+#cabelho{
+    border-color: aliceblue;
+    border: 1px solid ; 
+}
+
+#sobre{
+    margin: 30px 250px;
+    border: 1px solid white;
+}
+
+.flex{
+    display: flex;
+    text-align: center;
+}
+
+.flex img{
+    padding: 30px 80px ;
+    margin: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+.titulo{
+
+}
+
+.subtitulo{
+
+}
