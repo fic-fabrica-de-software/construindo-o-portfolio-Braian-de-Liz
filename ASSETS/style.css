@@ -1,52 +1,52 @@
-body{
-    margin : 30px 200px;
+body {
+    margin: 30px 200px;
     background-color: #141C21;
     color: white;
     text-align: center;
 }
 
-#cabelho{
+#cabelho {
     border-color: aliceblue;
-    border: 1px solid ; 
+    border: 1px solid;
 }
 
-#sobre{
+#sobre {
     margin: 30px 230px;
     border: 1px solid white;
 }
 
-.flex{
+.flex {
     display: flex;
     text-align: center;
 }
 
-.flex img{
-    padding: 30px 60px ;
+.flex img {
+    padding: 30px 60px;
     margin: 10px;
     width: 150px;
     height: 200px;
 }
 
-.nav{
+.nav {
     text-align: center;
     display: flex;
 }
 
 
-.fot{
+.fot {
     background-color: #666;
 }
 
-.uini{
+.uini {
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
-.titulo{
-
+.titulo {
+    f
 }
 
-.subtitulo{
-
+.subtitulo {
+    f
 }
