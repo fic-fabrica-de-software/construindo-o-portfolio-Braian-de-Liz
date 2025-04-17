@@ -11,7 +11,7 @@ body{
 }
 
 #sobre{
-    margin: 30px 250px;
+    margin: 30px 230px;
     border: 1px solid white;
 }
 
@@ -21,10 +21,26 @@ body{
 }
 
 .flex img{
-    padding: 30px 80px ;
+    padding: 30px 60px ;
     margin: 10px;
     width: 150px;
     height: 200px;
+}
+
+.nav{
+    text-align: center;
+    display: flex;
+}
+
+
+.fot{
+    background-color: #666;
+}
+
+.uini{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .titulo{
