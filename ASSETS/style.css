@@ -37,9 +37,9 @@ body {
 }
 
 #fot {
-    background-color: rgb(38, 46, 51);
+    background-color: #1C2429	;
     margin: 80px 5px; 
-    
+    padding: 40px 0;
 }
 
 #seletorpg {
@@ -48,12 +48,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: rotateY('20');
+    transform: rotateY(20deg);
     border-radius: 10px;
 }
 
 .pagina-boton {
-    background: #645b5b;
+    background: #2B2E4A ;
     color: white;
     border: none;
     padding: 15px 10px;
@@ -69,7 +69,8 @@ body {
 
 .pagina-boton:hover {
     transform: scale(1.1);
-    background-color: skyblue;
+    background-color: #4FC1E9;
+    color: #12181C;
 }
 
 #paginas {
@@ -77,4 +78,19 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.eu, #projetos, #fot, #cabelho {
+    animation: aparecer 1s ease-out;
 }
