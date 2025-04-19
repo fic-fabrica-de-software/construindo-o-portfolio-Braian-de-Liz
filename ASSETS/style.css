@@ -14,6 +14,12 @@ body {
     border: 1px solid;
 }
 
+.cont{
+    margin: 30px 250px;
+
+    border: 1px solid white;
+}
+
 #sobre {
     margin: 30px 250px;
 
