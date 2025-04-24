@@ -103,7 +103,7 @@ body {
 #fot,
 #cabelho,
 .cont {
-    animation: aparecer 1s ease-out;
+    animation: aparecer 2s ease-out;
 }
 
 @keyframes vem-de-lado {
@@ -147,7 +147,7 @@ body {
 }
 
 .titulo-ARI, .subtitulo-ARI{
-    animation: teste 2s ease-in-out;
+    animation: teste 20s ease-in-out;
 }
 
 @keyframes footerb {
@@ -159,4 +159,14 @@ body {
 
 #fot{
     animation: footerb 2s ease-in-out;
+}
+
+@keyframes cont{
+    from{
+        transform: translateY(-200px);
+    }
+}
+
+.cont{
+    animation: cont 1s ease-in-out;
 }
