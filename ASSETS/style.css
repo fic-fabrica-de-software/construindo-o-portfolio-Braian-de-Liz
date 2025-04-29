@@ -32,6 +32,10 @@ body {
     display: flex;
 }
 
+p{
+    margin-top: 8px;
+}
+
 
 #sobre {
     margin: 30px auto;
@@ -79,6 +83,7 @@ body {
     border: none;
     padding: 15px 10px;
     cursor: pointer;
+    display: inline-block;
     border-radius: 15px;
     transition: transform 0.3s, background-color 0.3s;
     font-size: 18px;
@@ -155,7 +160,7 @@ body {
         box-shadow: 0 0 5px #fff;
     }
     100% {
-        box-shadow: 0 0 20px rgb(84, 84, 112);
+        box-shadow: 0 0 5px rgb(84, 84, 112);
     }
 }
 
@@ -217,4 +222,9 @@ body {
     .o{
         display: block;
     }
+}
+
+
+.exibir img {
+    animation: aparecer 2s ease-in-out;
 }
