@@ -30,6 +30,9 @@ body {
 
 .o{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 p{
@@ -125,8 +128,6 @@ p{
 }
 
 .exibir-form{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 40px;
     gap: 20px;
@@ -153,7 +154,7 @@ p{
 }
 
 .eu, #fot, .cont {
-    animation: aparecer 2s ease-out;
+    animation: aparecer 1.5s ease-out;
 }
 
 @keyframes vem-de-lado {
@@ -181,7 +182,7 @@ p{
 }
 
 .titulo-ARI, .subtitulo-ARI {
-    animation: teste 20s ease-in-out;
+    animation: teste 2s ease-in-out;
 }
 
 @keyframes footerb {
@@ -192,7 +193,7 @@ p{
 }
 
 #fot, #cabelho {
-    animation: footerb 2s ease-in-out;
+    animation: footerb 1.5s ease-in-out;
 }
 
 @keyframes cont {
