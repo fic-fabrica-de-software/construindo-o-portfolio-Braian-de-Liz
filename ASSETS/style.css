@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
 }
 
+
 #cabelho {
     border: 1px solid aliceblue;
     padding: 10px;
@@ -28,14 +29,14 @@ body {
     max-width: 900px;
 }
 
-.o{
+.o {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-p{
+p {
     margin-top: 8px;
 }
 
@@ -78,6 +79,29 @@ p{
     transform: rotateY(20deg);
     border-radius: 10px;
     width: 100%;
+}
+
+#escolhe-tema {
+    background: #2B2E4A;
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 15px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    min-width: 150px;
+    max-width: 230px;
+}
+
+#escolhe-tema:hover {
+    transform: scale(1.15);
+    background-color: #4FC1E9;
+    color: #12181C;
 }
 
 .pagina-boton {
@@ -127,7 +151,7 @@ p{
     max-width: 350px;
 }
 
-.exibir-form{
+.exibir-form {
     justify-content: center;
     margin: 40px;
     gap: 20px;
@@ -135,11 +159,11 @@ p{
     align-items: center;
 }
 
-.exibir-form img{
+.exibir-form img {
     max-width: 600px;
     max-height: 500px;
     width: 100%;
-    
+
 }
 
 @keyframes aparecer {
@@ -147,13 +171,16 @@ p{
         opacity: 0;
         transform: translateY(100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.eu, #fot, .cont {
+.eu,
+#fot,
+.cont {
     animation: aparecer 1.5s ease-out;
 }
 
@@ -162,13 +189,15 @@ p{
         opacity: 0;
         transform: translatex(-200px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.titulo, .subtitulo {
+.titulo,
+.subtitulo {
     animation: vem-de-lado 1s ease-out;
 }
 
@@ -176,12 +205,14 @@ p{
     0% {
         box-shadow: 0 0 5px #fff;
     }
+
     100% {
         box-shadow: 0 0 5px rgb(84, 84, 112);
     }
 }
 
-.titulo-ARI, .subtitulo-ARI {
+.titulo-ARI,
+.subtitulo-ARI {
     animation: teste 2s ease-in-out;
 }
 
@@ -192,7 +223,8 @@ p{
     }
 }
 
-#fot, #cabelho {
+#fot,
+#cabelho {
     animation: footerb 1.5s ease-in-out;
 }
 
@@ -202,7 +234,9 @@ p{
     }
 }
 
-.cont, .eu, #sobre {
+.cont,
+.eu,
+#sobre {
     animation: cont 2s ease-in-out;
 }
 
@@ -213,7 +247,8 @@ p{
         margin: 10px auto;
     }
 
-    .cont, #sobre {
+    .cont,
+    #sobre {
         padding: 15px;
         margin: 20px auto;
     }
@@ -236,7 +271,7 @@ p{
         flex-direction: column;
     }
 
-    .o{
+    .o {
         display: block;
     }
 }
@@ -246,11 +281,32 @@ p{
     animation: aparecer 2s ease-in-out;
 }
 
-.download{
+.download {
     gap: 50px;
 }
 
 .download a {
     gap: 10px;
     margin: 20px;
+}
+
+/* abaixo é configuração do tema claro */
+
+body.claro {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.cont.claro{
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid black;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
 }
