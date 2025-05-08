@@ -301,12 +301,3 @@ body.claro {
     max-width: 1200px;
 }
 
-.cont.claro {
-    margin: 30px auto;
-    background-color: #fff;
-    border: 1px solid black;
-    align-items: center;
-    padding: 20px;
-    width: 90%;
-    max-width: 900px;
-}
