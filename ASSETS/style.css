@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #141C21;
     color: white;
@@ -330,7 +334,7 @@ p {
 @media (max-width: 768px) {
     body {
         width: 95%;
-        margin: 10px auto;
+        margin: 1px ;
     }
 
     #barrasup {
@@ -340,7 +344,7 @@ p {
     .cont,
     #sobre {
         padding: 15px;
-        margin: 20px auto;
+        margin: 10px auto;
     }
 
     .eu {
