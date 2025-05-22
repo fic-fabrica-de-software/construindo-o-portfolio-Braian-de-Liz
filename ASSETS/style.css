@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -195,7 +195,7 @@ p {
     margin: 15px;
 }
 
-hr{
+hr {
     height: 3px;
 }
 
@@ -338,7 +338,7 @@ hr{
 @media (max-width: 768px) {
     body {
         width: 95%;
-        margin: 1px ;
+        margin: 1px;
     }
 
     #barrasup {
