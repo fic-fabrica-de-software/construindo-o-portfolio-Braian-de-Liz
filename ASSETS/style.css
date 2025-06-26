@@ -9,12 +9,12 @@ html {
 }
 
 body {
-    background-color: #141C21;
+    background: linear-gradient(360deg, #021c3dc4, #281c31);
     color: white;
+    margin-top: 0;
     text-align: center;
-    margin: 20px auto;
     width: 100%;
-    max-width: 1920px;
+
 }
 
 /*toúrng~fldnbvo´rktnmhort~ikdfmhls~ktjhsirjhtfkijhmdhkmlçfkdgmhlfgnmhlfgjhtjnhlçjfgnhjfdgnhjçfld;nh*/
@@ -26,7 +26,7 @@ body {
     justify-content: center;
     margin-top: 0;
     align-items: center;
-    background-color: #333;
+    background: linear-gradient(to left, #122946c4, #5e4b6d);
     padding: 1rem;
     color: white;
 }
@@ -90,7 +90,6 @@ body {
 
 .cont {
     margin: 30px auto;
-    background-color: #1C2429;
     border: 1px solid white;
     align-items: center;
     padding: 20px;
@@ -132,8 +131,8 @@ p {
 }
 
 #fot {
-    background-color: #1C2429;
-    margin: 20px 0;
+    background: linear-gradient(to right, #122946c4, #5e4b6d);
+    margin:  0;
     margin-top: 220px;
     position: static;
     padding: 40px 0;
