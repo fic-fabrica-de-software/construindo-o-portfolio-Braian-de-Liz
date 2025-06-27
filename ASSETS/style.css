@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at center, #122946c4, #5e4b6d);
+   background: linear-gradient(135deg, #0d1b2a, #122946, #5e4b6d);
     color: white;
     margin-top: 0;
     text-align: center;
@@ -28,8 +28,9 @@ body {
     align-items: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 0 0 20px 20px;
     padding: 1rem;
     color: white;
@@ -91,6 +92,11 @@ body {
     margin-top: 20px;
     margin-bottom: 80px;
     padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .cont {
@@ -121,7 +127,11 @@ p {
 
 #sobre {
     margin: 30px auto;
-    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 20px;
     width: 90%;
     max-width: 50%;
@@ -141,9 +151,11 @@ p {
 }
 
 #fot {
-    background: linear-gradient(135deg, rgba(18, 41, 70, 0.5), rgba(94, 75, 109, 0.5));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     margin: 0;
     margin-top: 220px;
     position: static;
