@@ -365,39 +365,12 @@ hr {
 
 
 @media (max-width: 768px) {
-    body {
-        width: 95%;
-        margin: 1px;
-    }
+
 
     #barrasup {
         gap: 2%;
     }
 
-    .cont,
-    #sobre {
-        padding: 15px;
-        margin: 10px auto;
-    }
-
-    .eu {
-        width: 90%;
-        margin: 0;
-    }
-
-    .eu img {
-        width: 120px;
-        height: 160px;
-    }
-
-    #seletorpg {
-        transform: none;
-    }
-
-    .pagina-boton {
-        font-size: 16px;
-        padding: 12px;
-    }
 
     .exibir {
         flex-direction: column;
