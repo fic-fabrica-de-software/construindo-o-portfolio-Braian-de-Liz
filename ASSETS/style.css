@@ -120,6 +120,10 @@ body {
     width: 100%;
 }
 
+.o img {
+    border-radius: 20px;
+}
+
 p {
     margin-top: 8px;
 }
@@ -178,16 +182,15 @@ p {
     width: 100%;
 }
 
-
 .pagina-boton {
-    background: linear-gradient(to right, #1b202b, #1b174e);
+    background: linear-gradient(90deg, #2e3440 0%, #3b4252 50%, #4c566a 100%);
     color: white;
     border: none;
     padding: 15px 10px;
     cursor: pointer;
     display: inline-block;
     border-radius: 15px;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, color 0.3s;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -196,7 +199,8 @@ p {
     max-width: 230px;
     margin: 15px;
     position: relative;
-    /* necessário para o ::before */
+    overflow: hidden;
+    z-index: 1;
 }
 
 .pagina-boton::before {
@@ -206,20 +210,21 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #4FC1E9, #8aca40);
+    background: linear-gradient(90deg, rgba(79, 193, 233, 0.2) 0%, rgba(102, 126, 234, 0.3) 50%, rgba(90, 90, 140, 0.4) 100%);
     opacity: 0;
-    transition: opacity 1.5s ease;
-    z-index: -1;
+    transition: opacity 0.8s ease, background 0.8s ease;
     border-radius: 15px;
+    z-index: -1;
+    backdrop-filter: blur(10px);
 }
 
 .pagina-boton:hover::before {
     opacity: 1;
+    background: linear-gradient(90deg, rgba(79, 193, 233, 0.6) 0%, rgba(102, 126, 234, 0.7) 50%, rgba(90, 90, 140, 0.8) 100%);
 }
 
 .pagina-boton:hover {
     transform: scale(1.15);
-    background-color: #4FC1E9;
     color: #12181C;
 }
 
@@ -251,6 +256,7 @@ hr {
     width: 100%;
     max-width: 350px;
     max-height: 450px;
+    border-radius: 20px;
 }
 
 .exibir-form {
