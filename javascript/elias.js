@@ -12,14 +12,13 @@ function pulo() {
 }
 
 function iniciarLoop() {
-    console.log("Loop iniciado");
+
 
     loop = setInterval(() => {
         const posicaoTubo = tubo.offsetLeft;
         const posicaoMario = +window.getComputedStyle(quemario).bottom.replace('px', '');
 
         if (posicaoTubo <= 120 && posicaoTubo > 0 && posicaoMario < 80) {
-            console.log("COLISÃO!");
 
             tubo.style.animation = 'none';
             tubo.style.left = `${posicaoTubo}px`;
@@ -38,7 +37,6 @@ function iniciarLoop() {
 }
 
 function reiniciarJogo() {
-    console.log("Reiniciando...");
 
     tubo.style.animation = 'none';
     tubo.offsetWidth;
