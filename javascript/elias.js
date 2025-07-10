@@ -29,7 +29,7 @@ function iniciarLoop() {
             quemario.style.bottom = `${posicaoMario}px`;
 
             clearInterval(loop);
-            isAlive = false;
+            mexe = false;
 
             setTimeout(reiniciarJogo, 1200);
         }
@@ -49,7 +49,7 @@ function reiniciarJogo() {
     quemario.style.animation = '';
     quemario.style.bottom = '0px';
 
-    isAlive = true;
+    mexe = true;
     setTimeout(() => {
         iniciarLoop();
     }, 100);
