@@ -32,7 +32,7 @@ Este projeto foi desenvolvido para apresentar meus conhecimentos, formações, i
 
 ## 🌐 Acesse Online
 
-📎 [Clique aqui para acessar o portfólio](https://construindo-o-portfolio-braian-de-liz.onrender.com/index.html)
+https://construindo-o-portfolio-braian-de-liz.onrender.com/index.html
 
 ---
 
