@@ -405,18 +405,50 @@ hr {
 
 
 @media (max-width: 768px) {
-
-
     #barrasup {
-        gap: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 1rem;
     }
 
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 
-    .exibir {
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 4px 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #sobre {
+        width: 95%;
+        max-width: 95%; /* <-- este aqui resolve */
+        padding: 20px;
+    }
+
+    .eu {
         flex-direction: column;
+        width: 100%;
+        gap: 20px;
     }
 
-    .o {
-        display: block;
+    .eu img {
+        width: 140px;
+        height: auto;
     }
 }
