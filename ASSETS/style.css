@@ -16,8 +16,74 @@ body {
     margin-top: 0;
     text-align: center;
     width: 100%;
-
 }
+
+/* Ícones flutuantes no fundo */
+#fundo-animado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#fundo-animado span {
+    position: absolute;
+    animation: flutuar 30s linear infinite;
+    opacity: 0.2;
+}
+
+#fundo-animado span img {
+    width: 24px;
+    height: 24px;
+    filter: blur(0.5px);
+}
+
+#fundo-animado span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+#fundo-animado span:nth-child(2) {
+    left: 30%;
+    animation-delay: 5s;
+}
+
+#fundo-animado span:nth-child(3) {
+    left: 50%;
+    animation-delay: 10s;
+}
+
+#fundo-animado span:nth-child(4) {
+    left: 70%;
+    animation-delay: 15s;
+}
+
+#fundo-animado span:nth-child(5) {
+    left: 90%;
+    animation-delay: 20s;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
 
 /*toúrng~fldnbvo´rktnmhort~ikdfmhls~ktjhsirjhtfkijhmdhkmlçfkdgmhlfgnmhlfgjhtjnhlçjfgnhjfdgnhjçfld;nh*/
 
@@ -37,6 +103,8 @@ body {
     color: white;
     z-index: 1000;
 }
+/*toúrng~fldnbvo´rktnmhort~ikdfmhls~ktjhsirjhtfkijhmdhkmlçfkdgmhlfgnmhlfgjhtjnhlçjfgnhjfdgnhjçfld;nh*/
+
 
 .logo {
     font-size: 1.5rem;
