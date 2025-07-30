@@ -1,0 +1,20 @@
+{
+  "name": "construindo-o-portfolio-braian-de-liz",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao meu portfólio pessoal!  \r Este projeto foi desenvolvido para apresentar meus conhecimentos, formações, interesses e projetos na área de **Desenvolvimento de Sistemas**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fic-fabrica-de-software/construindo-o-portfolio-Braian-de-Liz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fic-fabrica-de-software/construindo-o-portfolio-Braian-de-Liz/issues"
+  },
+  "homepage": "https://github.com/fic-fabrica-de-software/construindo-o-portfolio-Braian-de-Liz#readme"
+}
