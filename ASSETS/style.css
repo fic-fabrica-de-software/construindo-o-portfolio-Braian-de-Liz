@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    background: linear-gradient(to left top, #2e3440, #3b4252, #4c566a, #463950);
+    /* background: linear-gradient(to left top, #2e3440, #3b4252, #4c566a, #463950); */
+    background: linear-gradient(to left top, #0f2027, #203a43, #2c5364);
     background-size: 600% 600%;
     animation: gradiente-animado 20s ease infinite;
     color: white;
@@ -72,12 +73,15 @@ body {
         transform: translateY(100vh);
         opacity: 0;
     }
+
     10% {
         opacity: 0.3;
     }
+
     50% {
         opacity: 0.2;
     }
+
     100% {
         transform: translateY(-10vh);
         opacity: 0;
@@ -103,6 +107,7 @@ body {
     color: white;
     z-index: 1000;
 }
+
 /*toúrng~fldnbvo´rktnmhort~ikdfmhls~ktjhsirjhtfkijhmdhkmlçfkdgmhlfgnmhlfgjhtjnhlçjfgnhjfdgnhjçfld;nh*/
 
 
@@ -505,7 +510,8 @@ hr {
 
     #sobre {
         width: 95%;
-        max-width: 95%; /* <-- este aqui resolve */
+        max-width: 95%;
+        /* <-- este aqui resolve */
         padding: 20px;
     }
 
