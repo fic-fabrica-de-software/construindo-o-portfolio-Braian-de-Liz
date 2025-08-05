@@ -19,7 +19,6 @@ body {
     width: 100%;
 }
 
-/* Ícones flutuantes no fundo */
 #fundo-animado {
     position: fixed;
     top: 0;
@@ -513,6 +512,10 @@ hr {
         max-width: 95%;
         /* <-- este aqui resolve */
         padding: 20px;
+    }
+
+    .o{
+        display: block;
     }
 
     .eu {
