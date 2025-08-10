@@ -467,6 +467,10 @@ hr {
     animation: aparecer 2s ease-in-out;
 }
 
+#rodanav {
+    display: none;
+}
+
 .download {
     gap: 50px;
 }
@@ -477,13 +481,31 @@ hr {
 }
 
 
+
 @media (max-width: 768px) {
     #barrasup {
+        display: none;
+    }
+
+
+    #rodanav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        padding: 1rem;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+
+
+    #rodanav img {
+        width: 20px;
+        height: 20px;
     }
 
     .nav-links {
