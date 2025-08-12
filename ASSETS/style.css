@@ -264,6 +264,11 @@ p {
     width: 100%;
 }
 
+#espaco{
+    height: 100px;
+}
+
+
 .pagina-boton {
     background: linear-gradient(90deg, #2e3440 0%, #3b4252 50%, #4c566a 100%);
     color: white;
