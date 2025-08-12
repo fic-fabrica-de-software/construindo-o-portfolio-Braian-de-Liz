@@ -201,6 +201,7 @@ body {
 
 .o img {
     border-radius: 20px;
+    border: #222 1px solid;
 }
 
 p {
@@ -344,6 +345,7 @@ hr {
     max-width: 350px;
     max-height: 450px;
     border-radius: 20px;
+    border: #222;
 }
 
 .exibir-form {
