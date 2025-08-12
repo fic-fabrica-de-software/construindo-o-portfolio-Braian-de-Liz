@@ -95,6 +95,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0;
+    top: 0;
     align-items: center;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -107,7 +108,6 @@ body {
     z-index: 1000;
 }
 
-/*toúrng~fldnbvo´rktnmhort~ikdfmhls~ktjhsirjhtfkijhmdhkmlçfkdgmhlfgnmhlfgjhtjnhlçjfgnhjfdgnhjçfld;nh*/
 
 
 .logo {
