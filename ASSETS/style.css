@@ -189,7 +189,7 @@ body {
     align-items: center;
     padding: 20px;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .o {
@@ -362,6 +362,10 @@ hr {
     width: 100%;
 }
 
+.descricao{
+    text-align: center;
+}
+
 @keyframes brilho-glass {
     0% {
         box-shadow: 0 0 5px #4fc1e9;
@@ -465,9 +469,6 @@ hr {
 #sobre {
     animation: cont 2s ease-in-out;
 }
-
-
-
 
 .exibir img {
     animation: aparecer 2s ease-in-out;
