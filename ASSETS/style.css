@@ -265,20 +265,18 @@ p {
     width: 100%;
 }
 
-#espaco{
+#espaco {
     height: 100px;
 }
 
-
 .pagina-boton {
-    background: linear-gradient(90deg, #2e3440 0%, #3b4252 50%, #4c566a 100%);
+    background: rgba(255, 255, 255, 0.08);
     color: white;
-    border: none;
-    padding: 15px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
     cursor: pointer;
     display: inline-block;
-    border-radius: 15px;
-    transition: transform 0.3s, color 0.3s;
+    border-radius: 18px;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -289,32 +287,58 @@ p {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
 }
 
 .pagina-boton::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(79, 193, 233, 0.2) 0%, rgba(102, 126, 234, 0.3) 50%, rgba(90, 90, 140, 0.4) 100%);
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), transparent 60%);
     opacity: 0;
-    transition: opacity 0.8s ease, background 0.8s ease;
-    border-radius: 15px;
+    transition: opacity 0.6s ease;
+    border-radius: inherit;
     z-index: -1;
-    backdrop-filter: blur(10px);
+}
+
+.pagina-boton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .pagina-boton:hover::before {
     opacity: 1;
-    background: linear-gradient(90deg, rgba(79, 193, 233, 0.6) 0%, rgba(102, 126, 234, 0.7) 50%, rgba(90, 90, 140, 0.8) 100%);
 }
 
-.pagina-boton:hover {
-    transform: scale(1.15);
-    color: #12181C;
+.pagina-boton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: skewX(-25deg);
 }
+
+.pagina-boton:hover::after {
+    animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
 
 hr {
     height: 3px;
@@ -362,7 +386,7 @@ hr {
     width: 100%;
 }
 
-.descricao{
+.descricao {
     text-align: center;
 }
 
@@ -544,7 +568,7 @@ hr {
         padding: 20px;
     }
 
-    .o{
+    .o {
         display: block;
     }
 
