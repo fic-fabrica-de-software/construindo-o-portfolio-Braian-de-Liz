@@ -11,13 +11,11 @@
 
 <body>
     <div id="fundo-animado">
-        <span><img src="../ASSETS/imagens/logos-lang/js.png" alt=""></span>
-        <span><img src="../ASSETS/imagens/logos-lang/html-5.png" alt=""></span>
-        <span><img src="../ASSETS/imagens/logos-lang/css-3.png" alt=""></span>
-        <span><img src="../ASSETS/imagens/logos-lang/nodejs.png" alt=""></span>
+        <span><img src="../ASSETS/imagens/logos-lang/js.png" alt="JavaScript"></span>
+        <span><img src="../ASSETS/imagens/logos-lang/html-5.png" alt="HTML5"></span>
+        <span><img src="../ASSETS/imagens/logos-lang/css-3.png" alt="CSS3"></span>
+        <span><img src="../ASSETS/imagens/logos-lang/nodejs.png" alt="Node.js"></span>
     </div>
-
-
 
     <nav id="barrasup">
         <div class="logo"></div>
@@ -30,7 +28,6 @@
         </ul>
     </nav>
 
-
     <header id="cabelho">
         <h1 class="titulo-ARI">Braian de Liz</h1>
         <h3 class="subtitulo-ARI">Áreas de Interesse</h3>
@@ -39,122 +36,115 @@
 
     <main>
         <section class="cont">
-
-            <div class="titulo">
-                <h3>Linguagens de Interesse</h3>
+            <div>
+                <h2>Linguagens de Interesse</h2>
             </div>
 
-            <div class="o">
-                <div class="exibir">
-                    <div>
-                        <img src="../ASSETS/imagens/Csharp.png" alt="">
-                        <h4>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev"
+                    onclick="moveSlide(-1, this.parentElement)">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/Csharp.png" alt="Logo da linguagem C#">
+                        <h4 class="descricao">
                             C# é uma linguagem voltada para o Back-End sendo base para
                             serviços web e aplicações de Desktop e Mobile e hoje é a que mais cresce
                         </h4>
                     </div>
-
-                    <div>
-                        <img src="../ASSETS/imagens/python.jpg" alt="">
-                        <h4>
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/python.jpg" alt="Logo da linguagem Python">
+                        <h4 class="descricao">
                             Python é uma linguagem de Programação, Back-End que é muito usada para estudo de Dados
                             sendo também a mais usada desde 2023
                         </h4>
                     </div>
-                </div>
-
-                <div class="exibir">
-                    <div>
-                        <img src="../ASSETS/imagens/js.jpg" alt="">
-                        <h4>
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/js.jpg" alt="Logo do JavaScript">
+                        <h4 class="descricao">
                             JavaScript é uma linguagem de programação usada para tornar sites interativos
                             . Também é usada em servidores com node.js
                         </h4>
                     </div>
-                    <div>
-                        <img src="../ASSETS/imagens/java.jpg" alt="">
-                        <h4>
-                            Java é uma das linguegens mais usadas do mercado, muito requisitada para Back-End
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/java.jpg" alt="Logo da linguagem Java">
+                        <h4 class="descricao">
+                            Java é uma das linguagens mais usadas do mercado, muito requisitada para Back-End
                             para aplicativos móveis
                         </h4>
                     </div>
                 </div>
+                <button class="carousel-btn carousel-btn-next"
+                    onclick="moveSlide(1, this.parentElement)">&#10095;</button>
             </div>
-
         </section>
 
         <section class="cont">
             <div>
-                <h3>
-                    Técnologias
-                </h3>
+                <h2>Tecnologias</h2>
             </div>
-            <div class="o">
-                <div class="exibir">
-                    <div>
-                        <img src="../ASSETS/imagens/react.png" alt="">
-                        <h4>
-                            O React é uma bibliotéca de código aberto de javascript, usada em muitos aplicativo
-                            e aplicações online muito famosas como netflix e os serviços da META no geral
 
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev"
+                    onclick="moveSlide(-1, this.parentElement)">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/react.png" alt="Logo do React">
+                        <h4 class="descricao">
+                            O React é uma biblioteca de código aberto de javascript, usada
+                            em muitos <br> aplicativoe aplicações online muito famosas como
+                            netflix e os serviços da META no geral
                         </h4>
                     </div>
-                    <div>
-                        <img src="../ASSETS/imagens/Android-logo.jpg" alt="">
-                        <h4>
-                            Desenvolver aplicativos para android é hoje uma fonte quase infinita de público
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/Android-logo.jpg" alt="Logo do Android">
+                        <h4 class="descricao">
+                            Desenvolver aplicativos para android é hoje uma fonte quase infinita <br> de público
                             pois dispositivos android são usados pela maior parte do planeta hoje
                         </h4>
                     </div>
-                </div>
-
-                <div class="exibir">
-
-                    <div>
-                        <img src="../ASSETS/imagens/api.webp" alt="">
-                        <h4>
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/api.webp" alt="Ilustração de API">
+                        <h4 class="descricao">
                             APIs são sistemas de comunicação entre sistemas diferentes,
-                            por exemplo um aplicativo local no seu celular se comunica com
+                            por exemplo um <br> aplicativo local no seu celular se comunica com
                             um servidor
                         </h4>
                     </div>
-
-                    <div>
-                        <img src="../ASSETS/imagens/open-linux-terminal.png" alt="">
-                        <h4>
-                            Dominar o terminal do Linux é algo essêncial para alguém que quer
-                            trabalhar com servidores, pois em sua maioria operam com sistema Linux
+                    <div class="carousel-slide">
+                        <img src="../ASSETS/imagens/open-linux-terminal.png" alt="Terminal do Linux">
+                        <h4 class="descricao">
+                            Dominar o terminal do Linux é algo essencial para alguém que quer
+                            trabalhar com <br> servidores, pois em sua maioria operam com sistema Linux
                             e não possuem interface gráfica
                         </h4>
                     </div>
-
                 </div>
-
+                <button class="carousel-btn carousel-btn-next"
+                    onclick="moveSlide(1, this.parentElement)">&#10095;</button>
             </div>
-
         </section>
     </main>
 
-
-
     <footer id="fot">
-        <p>© <span id="ano"> .</span> .Braian de Liz, Direitos Reservados</p>
-        <br>
-        <br>
+        <p>© <span id="ano"></span> Braian de Liz, Direitos Reservados</p>
+        <br><br>
         <a href="../index.html" class="pagina-boton">← Voltar</a>
-
     </footer>
 
     <nav id="rodanav">
-        <a href="projetos.html"><img src="../ASSETS/imagens/navrodicons/projeto.png" alt=""></a>
-        <a href="formacoes.html"><img src="../ASSETS/imagens/navrodicons/diploma.png" alt=""></a>
-        <a href="areas-interesse.html"><img src="../ASSETS/imagens/navrodicons/estudar.png" alt=""></a>
-        <a href="Conhecimentos.html"><img src="../ASSETS/imagens/navrodicons/conhecimento.png" alt=""></a>
-        <a href="Hobbies.html"><img src="../ASSETS/imagens/navrodicons/hobbies.png" alt=""></a>
+        <a href="projetos.html"><img src="../ASSETS/imagens/navrodicons/projeto.png" alt="Projetos"></a>
+        <a href="formacoes.html"><img src="../ASSETS/imagens/navrodicons/diploma.png" alt="Formações"></a>
+        <a href="areas-interesse.html"><img src="../ASSETS/imagens/navrodicons/estudar.png"
+                alt="Áreas de Interesse"></a>
+        <a href="Conhecimentos.html"><img src="../ASSETS/imagens/navrodicons/conhecimento.png" alt="Conhecimentos"></a>
+        <a href="Hobbies.html"><img src="../ASSETS/imagens/navrodicons/hobbies.png" alt="Hobbies"></a>
     </nav>
 
+    <script src="../javascript/carrosel.js"></script>
+    <script>
+        // Preenche o ano atual no rodapé
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
 </body>
-<script src="../javascript/alterar-cor.js"></script>
-<!-- <script src="../javascript/elias.js"></script> -->
 
 </html>
