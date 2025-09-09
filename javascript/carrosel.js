@@ -4,6 +4,7 @@ function moveSlide(direction, container) {
     
     if (slides.length === 0) return;
     
+    // Força o cálculo da largura real
     const slideWidth = slides[0].offsetWidth;
     const currentTransform = window.getComputedStyle(wrapper).transform;
     
@@ -13,20 +14,23 @@ function moveSlide(direction, container) {
         currentPosition = matrix.m41;
     }
 
+    // Calcula o índice atual
     const currentIndex = Math.abs(currentPosition / slideWidth);
-
     let newIndex = currentIndex + direction;
 
+    // Lógica de navegação infinita
     if (newIndex >= slides.length) {
+        // Volta pro primeiro
         newIndex = 0;
         wrapper.style.transition = 'none';
         wrapper.style.transform = 'translateX(0)';
         
-     
-        wrapper.offsetHeight;
+        // Força reflow
+        wrapper.offsetWidth;
         wrapper.style.transition = 'transform 0.5s ease-in-out';
         return;
     } else if (newIndex < 0) {
+        // Vai pro último
         newIndex = slides.length - 1;
         const lastPosition = -(slideWidth * (slides.length - 1));
         
@@ -38,15 +42,21 @@ function moveSlide(direction, container) {
         return;
     }
 
+    // Movimento normal
     const newPosition = -(newIndex * slideWidth);
     wrapper.style.transform = `translateX(${newPosition}px)`;
 }
 
+// Reset ao redimensionar com debounce
+let resizeTimeout;
 window.addEventListener('resize', () => {
-    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-        wrapper.style.transition = 'none';
-        wrapper.style.transform = 'translateX(0)';
-        wrapper.offsetWidth; 
-        wrapper.style.transition = 'transform 0.5s ease-in-out';
-    });
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+            wrapper.style.transition = 'none';
+            wrapper.style.transform = 'translateX(0)';
+            wrapper.offsetWidth;
+            wrapper.style.transition = 'transform 0.5s ease-in-out';
+        });
+    }, 100);
 });
